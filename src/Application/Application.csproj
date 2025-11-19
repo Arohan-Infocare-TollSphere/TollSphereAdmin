@@ -21,8 +21,8 @@
         
         <PackageReference Include="FluentValidation" Version="12.1.0" />
         <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-rc.2.25502.107" />
-        <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="10.0.0-rc.2.25502.107" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="10.0.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
         <PackageReference Include="Hangfire.Core" Version="1.8.22" />
         <PackageReference Include="ZiggyCreatures.FusionCache" Version="2.4.0" />
