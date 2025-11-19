@@ -1,0 +1,9 @@
+﻿global using System.Data;
+global using Arohan.TollSphere.Application.Common.Interfaces;
+global using Arohan.TollSphere.Application.Common.Models;
+global using Arohan.TollSphere.Application.Common.Extensions;
+global using Arohan.TollSphere.Domain.Entities;
+global using FluentValidation;
+global using Microsoft.AspNetCore.Components;
+global using MudBlazor;
+global using Microsoft.EntityFrameworkCore;

@@ -1,0 +1,63 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Reflection
+@using System.Text
+@using System.ComponentModel
+@using Arohan.TollSphere.Server.UI.Services
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.Extensions.DependencyInjection
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Extensions.Localization
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.JSInterop
+@using MudBlazor
+@using MediatR
+@using AutoMapper
+@using AutoMapper.QueryableExtensions
+@using FluentValidation;
+@using Arohan.TollSphere.Domain
+@using Arohan.TollSphere.Application.Common.ExceptionHandlers
+@using Arohan.TollSphere.Application.Common.Extensions
+@using Arohan.TollSphere.Application.Common.Interfaces
+@using Arohan.TollSphere.Application.Common.Models
+@using Arohan.TollSphere.Application.Features.Identity.DTOs
+@using Arohan.TollSphere.Application.Common.Interfaces.Identity
+@using Arohan.TollSphere.Application.Common.Security;
+@using Arohan.TollSphere.Application.Common.Constants
+@using Arohan.TollSphere.Server.UI.Models
+@using Arohan.TollSphere.Server.UI
+@using Arohan.TollSphere.Server.UI.Shared
+@using Arohan.TollSphere.Server.UI.Components
+@using Arohan.TollSphere.Server.UI.Components.Forms
+@using Arohan.TollSphere.Server.UI.Components.Breadcrumbs
+@using Arohan.TollSphere.Server.UI.Components.Autocompletes
+@using Arohan.TollSphere.Server.UI.Components.Dialogs
+@using Arohan.TollSphere.Server.UI.Components.Identity
+@using Arohan.TollSphere.Server.UI.Components.Localization
+@using Arohan.TollSphere.Server.UI.Components.Redirections
+@using Arohan.TollSphere.Server.UI.Components.Shared
+@using Arohan.TollSphere.Server.UI.Components.Shared.Themes
+@using Arohan.TollSphere.Server.UI.Components.Shared.Layout
+@using Arohan.TollSphere.Server.UI.Services.Layout
+@using Arohan.TollSphere.Server.UI.Extensions
+@using Arohan.TollSphere.Server.UI.Services.JsInterop
+@using Severity=MudBlazor.Severity
+@using Color = MudBlazor.Color
+@inject IApplicationSettings ApplicationSettings
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+@inject IAuthorizationService AuthService 
+@inject IValidationService Validator
+@inject IJSRuntime JS
+@inject IMediator Mediator
+@inject NavigationManager Navigation
+@inject DialogServiceHelper DialogServiceHelper
+@inject IPermissionService PermissionService
+@inject IPermissionHelper PermissionHelper
+@inject IMapper Mapper
