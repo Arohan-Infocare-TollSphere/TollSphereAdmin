@@ -1,19 +1,19 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "hl.z",
-    "classifications": ["Web","Blazor","Clean Architecture"],
-    "name": "Clean Architecture for Blazor Server Solution",
-    "defaultName": "CleanArchitecture.Blazor",
-    "identity": "CleanArchitecture.Blazor.Solution.CSharp",
-    "groupIdentity": "CleanArchitecture.Blazor.Solution",
+    "classifications": ["Web","TollSphere","Clean Architecture"],
+    "name": "Clean Architecture for TollSphere Solution",
+    "defaultName": "Arohan.TollSphere",
+    "identity": "Arohan.TollSphere.Solution.CSharp",
+    "groupIdentity": "Arohan.TollSphere.Solution",
     "shortName": "ca-blazorserver-sln",
     "tags": {
       "language": "C#",
       "type": "project"
     },
-    "sourceName": "CleanArchitecture.Blazor",
+    "sourceName": "Arohan.TollSphere",
     "preferNameDirectory": true,
-    "description": "This is a solution templates for creating a Blazor Server application following the principles of Clean Architecture",
+    "description": "This is a solution templates for creating a TollSphere application following the principles of Clean Architecture",
     "sources": [
     {
       "source": "./",
