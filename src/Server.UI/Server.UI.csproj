@@ -35,6 +35,7 @@
         </PackageReference>
     </ItemGroup>
     <ItemGroup>
+        <ProjectReference Include="..\..\Arohan.TollSphere.ServiceDefaults\Arohan.TollSphere.ServiceDefaults.csproj" />
         <ProjectReference Include="..\Migrators\Migrators.MSSQL\Migrators.MSSQL.csproj" />
         <ProjectReference Include="..\Migrators\Migrators.PostgreSQL\Migrators.PostgreSQL.csproj" />
         <ProjectReference Include="..\Migrators\Migrators.SqLite\Migrators.SqLite.csproj" />

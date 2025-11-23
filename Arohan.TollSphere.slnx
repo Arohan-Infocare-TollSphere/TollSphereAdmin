@@ -11,6 +11,8 @@
     <Project Path="src/Application/Application.csproj" />
     <Project Path="src/Domain/Domain.csproj" />
     <Project Path="src/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/Protos/Protos.csproj" />
+    <Project Path="src/Server.API/Server.API.csproj" />
     <Project Path="src/Server.UI/Server.UI.csproj" />
   </Folder>
   <Folder Name="/src/Migrators/">
@@ -23,6 +25,8 @@
     <Project Path="tests/Application.UnitTests/Application.UnitTests.csproj" />
     <Project Path="tests/Domain.UnitTests/Domain.UnitTests.csproj" />
   </Folder>
+  <Project Path="Arohan.TollSphere.AppHost/Arohan.TollSphere.AppHost.csproj" Id="aabc96eb-71d3-4a2a-9346-14acec560d72" />
+  <Project Path="Arohan.TollSphere.ServiceDefaults/Arohan.TollSphere.ServiceDefaults.csproj" />
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>
