@@ -14,4 +14,5 @@ public abstract class DomainEvent : INotification
 
     public bool IsPublished { get; set; }
     public DateTimeOffset DateOccurred { get; protected set; }
+    public string EventType => GetType().Name;
 }

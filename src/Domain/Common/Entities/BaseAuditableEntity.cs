@@ -12,15 +12,25 @@ public abstract class BaseAuditableEntity : BaseEntity, IAuditableEntity
     public virtual DateTime? LastModifiedAt { get; set; }
 
     public virtual string? LastModifiedById { get; set; }
+
+    /// <summary>
+    /// Method to set creation audit information
+    /// </summary>
+    public virtual void SetCreationAudit(string createdById, DateTime? createdAt = null)
+    {
+        CreatedAt = createdAt ?? DateTime.UtcNow;
+        CreatedById = createdById;
+        LastModifiedAt = CreatedAt;
+        LastModifiedById = createdById;
+    }
+
+    /// <summary>
+    /// Method to set modification audit information
+    /// </summary>
+    public virtual void SetModificationAudit(string modifiedById, DateTime? modifiedAt = null)
+    {
+        LastModifiedAt = modifiedAt ?? DateTime.UtcNow;
+        LastModifiedById = modifiedById;
+    }
 }
 
-public interface IAuditableEntity
-{
-    DateTime? CreatedAt { get; set; }
-
-    string? CreatedById { get; set; }
-
-   DateTime? LastModifiedAt { get; set; }
-
-    string? LastModifiedById { get; set; }
-}

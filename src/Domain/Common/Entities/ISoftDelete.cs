@@ -5,6 +5,10 @@ namespace Arohan.TollSphere.Domain.Common.Entities;
 
 public interface ISoftDelete
 {
+    //DateTime? DeletedAt { get; set; }
+    //string? DeletedById { get; set; }
+
     DateTime? DeletedAt { get; set; }
     string? DeletedById { get; set; }
+    bool IsDeleted { get; }
 }

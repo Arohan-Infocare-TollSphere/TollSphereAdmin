@@ -11,3 +11,13 @@ public interface IEntity<T> : IEntity
 {
     T Id { get; set; }
 }
+public interface IAuditableEntity
+{
+    DateTime? CreatedAt { get; set; }
+
+    string? CreatedById { get; set; }
+
+    DateTime? LastModifiedAt { get; set; }
+
+    string? LastModifiedById { get; set; }
+}
